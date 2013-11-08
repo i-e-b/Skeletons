@@ -1,0 +1,9 @@
+node_modules
+*.*~
+*.swp
+web.config
+*.swo
+.tern-*
+lib/client/js/built
+lib/client/vendor
+hardcopy*

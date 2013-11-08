@@ -1,0 +1,25 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='vendor/bootstrap.css/css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/style.css')
+		link(rel='shortcut icon', href='images/favicon.ico')
+	body
+		div(class="navbar navbar-inverse navbar-fixed-top")
+			div(class="navbar-inner")
+				div(class="container")
+					button(type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse")
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					a(class="brand" href="#")= title
+					div(class="nav-collapse collapse")
+						ul(class="nav", id="site-nav", role="navigation")
+							li
+								a(href="receivedbatches") Received Batches
+							li
+								a(href="linkingerrors") Linking Errors
+							li
+								a(href="blacklistedproducts") Blacklisted Products
+		block content

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div(ng-app, ng-controller='BlacklistedProducts', class='container')
+		div(class='bootstrap-column-first bootstrap-column-width-four')
+			table(class='table-hover table')
+				thead
+					tr
+						th UPC
+						th Labelgroup
+				tbody
+					tr(ng-repeat='blacklistedProduct in blacklistedProductsResponse.products')
+						td	{{blacklistedProduct.upc}}
+						td	{{blacklistedProduct.labelGroup.name}} ({{blacklistedProduct.labelGroup.id}})
+	script(src="js/built/blacklisted-products.js")
